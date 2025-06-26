@@ -1,0 +1,56 @@
+main .navSelectors {
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navSelectors .navSelector {
+}
+
+.navSelector button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.navSelector button:hover {
+  background-color: black;
+  color: white;
+}
+
+.navSelector .active {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  main .navSelectors {
+    width: 90%;
+  }
+
+  .navSelector button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navSelector button {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+  }
+
+  main .navSelectors {
+    justify-content: center;
+  }
+}

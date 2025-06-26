@@ -1,0 +1,270 @@
+button {
+  background-color: #fdc913;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+header {
+  background-color: #ce2829;
+  max-height: 150px;
+  height: 25vh;
+}
+
+.header-content {
+  max-width: 400px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-content img {
+  max-width: 300px;
+  width: 100%;
+  flex: 3;
+}
+
+.header-content nav {
+  width: 100%;
+  flex: 1;
+  margin-bottom: 0.1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  color: white;
+}
+
+.order-content {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+form {
+  width: 100%;
+}
+
+.pizza-description {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 160%;
+}
+
+.pizzaForm-boyut,
+.pizzaForm-hamur {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pizzaForm-boyut label {
+  font-weight: 300;
+  margin-left: 1rem;
+}
+
+.pizzaForm-init-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .pizzaForm-init-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .pizzaForm-boyut,
+  .pizzaForm-hamur {
+    width: 40%;
+  }
+}
+
+.pizzaForm-name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.checkbox-array {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.checkbox-array-item {
+  width: calc(50% - 10px);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 600px) {
+  .checkbox-array-item {
+    width: calc(100% / 3 - 10px);
+  }
+}
+
+.pizzaForm-extras {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#checkbox-array-label {
+  font-weight: normal;
+}
+
+.pizzaForm-extras p {
+  font-weight: 300;
+}
+
+.pizzaForm-name,
+.pizzaForm-not {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pizzaForm-not p {
+  font-weight: 300;
+}
+
+.pizzaForm-textInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #5f5f5f;
+}
+
+@media (min-width: 600px) {
+  .pizzaForm-textInputs {
+    flex-direction: row;
+  }
+}
+
+.pizzaForm-textInputs input {
+  border: none;
+  border-bottom: 2px solid #5f5f5f;
+  outline: none;
+  padding: 8px 0;
+  transition: border-color 0.3s ease-in-out;
+  width: 80%;
+}
+
+.pizzaForm-textInputs input:focus {
+  border-bottom: 2px solid black;
+}
+
+.pizzaForm-checkout-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .pizzaForm-checkout {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.pizzaForm-pizzaCounter {
+  display: flex;
+  flex: 1;
+}
+
+.pizzaForm-pizzaCounter button {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10%;
+}
+
+.pizzaForm-pizzaCounter p {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+  border-top: 1px solid #5f5f5f;
+  border-bottom: 1px solid #5f5f5f;
+  border-radius: 10%;
+}
+
+.pizzaForm-checkout {
+  margin-top: 2.5rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.pizzaForm-checkoutTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+  border: 1px solid #5f5f5f;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+.pizzaForm-checkoutTexts h3 {
+  width: 60%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.pizzaForm-checkout button {
+  width: 50%;
+  border-radius: 2%;
+  font-weight: normal;
+}
+
+.pizzaForm-checkoutTexts span {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.error {
+  color: #ce2829;
+  font-weight: bold;
+}

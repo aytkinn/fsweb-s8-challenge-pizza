@@ -1,31 +1,40 @@
 {
-  "name": "teknolojik-yemekler",
-  "private": true,
-  "version": "2.1.0",
-  "type": "module",
+  "name": "wit-s8-challenge-pizza-project",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "vite",
+    "dev-host": "vite --host",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,html}\"",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "Ahmet Kavas ahmetpkavas@gmail.com",
+  "license": "ISC",
+  "description": "Wit Sprint 8 Challenge Pizza Project",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "cypress": "^14.5.4",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cypress": "^4.1.0",
+    "eslint-plugin-react": "^7.37.1",
+    "globals": "^15.9.0",
+    "nanoid": "^5.1.2",
+    "prettier": "^3.5.2",
+    "vite": "^5.4.2"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^6.2.0",
-    "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.2",
+    "@phosphor-icons/react": "^2.1.7",
     "axios": "^1.6.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^5.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.0.8"
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^9.2.3"
   }
 }

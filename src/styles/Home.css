@@ -1,0 +1,87 @@
+body,
+html {
+  height: 100%;
+}
+
+.hero {
+  background-image: url("/images/iteration-1-images/home-banner.png");
+  height: 95vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.hero section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.hero-logo {
+  width: 60%;
+  max-width: 300px;
+}
+
+.hero-slogan {
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: white;
+}
+
+.hero-slogan span {
+  display: block;
+}
+
+.hero section button {
+  background-color: #fdc913;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  width: 40%;
+}
+
+.hero section button:hover {
+  background-color: #e6b800;
+}
+
+@media (max-width: 768px) {
+  .hero-slogan {
+    display: block;
+    font-size: 5rem;
+  }
+  .hero section button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.menuHeadings {
+  text-align: center;
+}
+.menuHeadings h2 {
+  font-size: 2rem;
+}
+.ital1 {
+  color: #fdc913;
+  font-family: "Satisfy", cursive;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.menuHeadings .ital2 {
+  color: #ce2829;
+  font-family: "Satisfy", cursive;
+  font-style: italic;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,32 @@
+.pizzaFooter {
+  margin-top: 10px;
+}
+.pizzaFooter-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.pizzaFooter-details {
+  display: flex;
+  margin-top: 5%;
+}
+
+.pizzaFooter-details p {
+  flex: 3;
+}
+
+.pizzaFooter-fiyat {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.pizzaFooter-details span {
+  flex: 1;
+  display: flex;
+}
+
+.pizzaFooter-score,
+.pizzaFooter-ratingCount {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
