@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import workintech from '/workintech.svg'
-import './App.css'
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PizzaOrder from "./components/PizzaOrder";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
+    <BrowserRouter>
     <>
-      <h1>Merhaba Workintech</h1>
+      <Routes>
+        <Route path="/" element={<PizzaOrder />} />
+        <Route path="/success" element={<div>Siparişiniz başarıyla alındı!</div>} />
+      </Routes>
     </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
