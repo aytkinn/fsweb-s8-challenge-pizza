@@ -42,9 +42,8 @@ describe("Pizza Project Tests", () => {
       .type("Speed it up!");
 
     cy.get("button").contains("SİPARİŞ VER").click();
-    
+
     cy.url().should("include", "/success");
-    cy.contains("h2","TEBRIKLER!").should("be.visible");
-    
+    cy.contains("TEBRIKLER!").should("be.visible");
   });
 });

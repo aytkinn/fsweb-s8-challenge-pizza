@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import "./styles/reset.css";
 import "./styles/App.css";
 import "./styles/Home.css";
@@ -36,22 +35,3 @@ const App = () => {
 };
 
 export default App;
-=======
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PizzaOrder from "./components/PizzaOrder";
-function App() {
-  return (
-    <BrowserRouter>
-    <>
-      <Routes>
-        <Route path="/" element={<PizzaOrder />} />
-        <Route path="/success" element={<div>Siparişiniz başarıyla alındı!</div>} />
-      </Routes>
-    </>
-    </BrowserRouter>
-  );
-}
-
-export default App;
->>>>>>> b49ece52e78d8be4ce868683354340aa59202c8a
