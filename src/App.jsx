@@ -1,7 +1,7 @@
 import "./styles/reset.css";
 import "./styles/App.css";
 import "./styles/Home.css";
-import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min.js";
+import { Switch, Route } from "react-router-dom";
 import { useState } from "react";
 
 import Order from "./Order.jsx";
